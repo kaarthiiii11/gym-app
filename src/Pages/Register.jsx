@@ -75,6 +75,10 @@ function Register() {
             }
 
         } catch (error) {
+            console.log('Registration error:', error)
+            console.log('Error response:', error.response?.data)
+            console.log('Error status:', error.response?.status)
+
             toast.error('Registration failed')
         }
     }
