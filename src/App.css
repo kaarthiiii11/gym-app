@@ -1,0 +1,128 @@
+/* Admin Dashboard */
+
+.admin-shell {
+    background: #f4f7f5;
+    color: #17231c;
+}
+
+.admin-stat-card,
+.admin-panel-card,
+.admin-welcome {
+    background: #ffffff;
+    border: 1px solid #e2eae4;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.admin-stat-card {
+    height: 100%;
+}
+
+.admin-stat-card h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #198754;
+    margin: 18px 0;
+}
+
+.admin-welcome {
+    background: linear-gradient(120deg, #ffffff, #eaf7ee);
+}
+
+.workout-admin-card,
+.diet-admin-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e2eae4;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.admin-empty-state {
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed #b7c9bc;
+    border-radius: 14px;
+    color: #68756c;
+}
+
+.admin-panel-card .form-control:focus,
+.admin-panel-card .form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+/* Admin Login */
+
+.admin-login-page {
+    background: #edf3ef;
+}
+
+.admin-login-wrap {
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14);
+}
+
+.admin-login-visual {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(
+            rgba(8, 22, 13, 0.75),
+            rgba(8, 22, 13, 0.95)
+        ),
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85')
+        center / cover no-repeat;
+}
+
+.admin-login-message {
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.admin-login-form {
+    min-height: 600px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-login-form .form-control {
+    border-color: #d8e2db;
+}
+
+.admin-login-form .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+.admin-login-icon {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: #e0f5e6;
+    color: #198754;
+    font-size: 27px;
+}
+
+@media (max-width: 767px) {
+    .admin-panel-card,
+    .admin-stat-card {
+        padding: 18px;
+    }
+
+    .admin-login-form {
+        min-height: auto;
+    }
+}
